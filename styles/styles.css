@@ -22,6 +22,7 @@ body {
 
 #app-frame {
   width: 50%;
+  min-width: 340px;
   height: 50%;
   background-color: rgb(12, 12, 12);
   border-radius: 10px;
