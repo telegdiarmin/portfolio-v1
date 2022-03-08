@@ -10,7 +10,11 @@ body {
 #app {
   width: 100vw;
   height: 100vh;
-  background-color: gray;
+  background-image: linear-gradient(
+    135deg,
+    rgb(128, 128, 128),
+    rgb(102, 102, 102)
+  );
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +37,7 @@ body {
   list-style: none;
   background-color: rgb(204, 204, 204);
   cursor: default;
-  user-select: none ;
+  user-select: none;
 }
 
 #tabs {
@@ -54,21 +58,21 @@ body {
 }
 
 .tab-standard {
-    margin: auto 5px 0 10px;
-    border-radius: 5px 5px 0 0;
-    background-color: white;
-    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+  margin: auto 5px 0 10px;
+  border-radius: 5px 5px 0 0;
+  background-color: white;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
 .tab-controller {
-    display: flex;
-    align-items: center;
-    margin-top: auto;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
 }
 
 .tab-controller:hover {
-    border-radius: 5px 5px 0 0;
-    background-color: rgb(224, 224, 224);
+  border-radius: 5px 5px 0 0;
+  background-color: rgb(224, 224, 224);
 }
 
 .tab-icon {
@@ -83,7 +87,7 @@ body {
 }
 
 .control-icon {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .window-btn {
@@ -94,12 +98,12 @@ body {
 }
 
 .window-btn:hover {
-    background-color: rgb(163, 163, 163);
+  background-color: rgb(163, 163, 163);
 }
 
 .close:hover {
-    color: white;
-    background-color: rgb(232, 17, 35);
+  color: white;
+  background-color: rgb(232, 17, 35);
 }
 
 #workspace {
@@ -110,10 +114,14 @@ body {
 
 #workspace p::selection,
 #workspace span::selection {
-    background: rgb(134, 134, 134);
+  background: rgb(134, 134, 134);
 }
 
 #txt-anim {
+  border-right: solid 2px rgb(204, 204, 204);
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgba(255, 255, 255, 0.7);
   animation: animated-text 4s steps(9, end) 1s 1 normal both,
     animated-cursor 600ms, steps(9, end) infinite;
 }
@@ -134,4 +142,8 @@ body {
   to {
     border-right-color: transparent;
   }
+}
+
+.txt-alert {
+    color: rgb(231, 72, 86);
 }
