@@ -118,33 +118,20 @@ body {
   background: rgb(134, 134, 134);
 }
 
-#txt-anim {
-  border-right: solid 2px rgb(204, 204, 204);
+/* #txt-anim {
   white-space: nowrap;
-  overflow: hidden;
-  color: rgba(255, 255, 255, 0.7);
-  animation: animated-text 4s steps(9, end) 1s 1 normal both,
-    animated-cursor 600ms, steps(9, end) infinite;
+} */
+
+#txt-anim::after {
+  content: "|";
+  animation: blink 500ms ease infinite alternate;
 }
 
-@keyframes animated-text {
-  from {
-    width: 0;
-  }
-  to {
-    width: 400px;
-  }
-}
-
-@keyframes animated-cursor {
-  from {
-    border-right-color: rgba(0, 255, 0, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
+@keyframes blink {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 .txt-alert {
-    color: rgb(231, 72, 86);
+  color: rgb(231, 72, 86);
 }
