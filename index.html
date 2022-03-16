@@ -24,6 +24,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/typewriter.js" defer></script>
+    <script src="./scripts/app.js" defer></script>
   </head>
   <body>
     <header></header>
@@ -33,11 +35,28 @@
           <div id="titlebar">
             <ul id="tabs">
               <li class="tab tab-standard">
-                <span class="material-icons tab-icon">terminal</span>
+                <span class="material-icons-outlined tab-icon">terminal</span>
                 <p>Terminal</p>
               </li>
-              <li class="tab tab-controller">
-                <span class="material-icons-outlined control-icon"> expand_more </span>
+              <li class="tab tab-controller" id="app-dropdown">
+                <span class="material-icons-outlined control-icon">
+                  expand_more
+                </span>
+                <ul class="dropdown-content" id="app-dropdown-cont">
+                  <li>
+                    <span class="material-icons-outlined tab-icon">terminal</span>
+                    <a href="">Terminal</a>
+                  </li>
+                  <div class="divider"></div>
+                  <li>
+                    <span class="material-icons-outlined tab-icon">settings</span>
+                    <a href="">Settings</a>
+                  </li>
+                  <li>
+                    <span class="material-icons-outlined tab-icon">question_mark</span>
+                    <a href="">About</a>
+                  </li>
+                </ul>
               </li>
             </ul>
             <ul id="controls">
@@ -61,12 +80,11 @@
           <div id="workspace">
             <p>Terminal</p>
             <p>Copyright (C) Telegdi Ármin. All rights reserved.</p>
-            <p>C:\Users\armin><span>about.txt</span></p>
-            <p class="txt-alert">about.txt : Content updates soon!</p>
-            <p>C:\Users\armin><span id="txt-anim"></span></p>
+            <p>C:\Users\armin><span id="typewriter" class="type-active"></span></p>
           </div>
         </div>
       </section>
+      <!-- <section id="about"></section> -->
     </main>
   </body>
 </html>
