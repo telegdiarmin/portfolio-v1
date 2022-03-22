@@ -90,6 +90,7 @@
   padding: 0 0 0.5rem 0;
   font-family: "Source Code", monospace;
   font-size: 1.5rem;
+  color: rgb(40, 40, 40);
 }
 
 .container-content h4 {
@@ -99,10 +100,11 @@
   color: rgb(120, 120, 120);
 }
 
-.container-content p {
+.container-content-p {
   font-size: 1rem;
   text-align: justify;
   hyphens: auto;
+  color: rgb(40, 40, 40) !important;
 }
 
 .txt-divider {

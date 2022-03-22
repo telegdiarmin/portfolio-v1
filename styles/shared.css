@@ -20,6 +20,30 @@ body {
   align-items: center;
 }
 
+#scrollmark {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  height: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.scrollmark-icon {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 3rem;
+  animation: bounce 0.8s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 #about {
   display: flex;
   flex-direction: column;
@@ -57,7 +81,6 @@ body {
 }
 
 #about p {
-  margin-bottom: 2rem;
   text-align: justify;
   color: white;
   hyphens: auto;
@@ -82,15 +105,15 @@ body {
 }
 
 .production-skill {
-  background-color: rgb(237, 125, 49) ;
+  background-color: rgb(237, 125, 49);
 }
 
 .utility-skill {
-  background-color: rgb(68, 114, 196) ;
+  background-color: rgb(68, 114, 196);
 }
 
 .language-skill {
-  background-color: rgb(143, 170, 220) ;
+  background-color: rgb(143, 170, 220);
 }
 
 .btn {
