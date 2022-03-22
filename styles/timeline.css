@@ -1,0 +1,150 @@
+.timeline {
+  position: relative;
+  margin: 0 auto 3rem auto;
+}
+
+.timeline::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  margin-left: -3px;
+  background-color: white;
+  border-radius: 2px;
+  content: "";
+}
+
+.container {
+  position: relative;
+  padding: 10px 0;
+  background-color: inherit;
+}
+
+.container::after {
+  position: absolute;
+  z-index: 1;
+  top: 19px;
+  right: -12px;
+  width: 26px;
+  height: 26px;
+  background-color: rgb(40, 235, 215);
+  /* border: 4px solid #ff9f55; */
+  /* border-radius: 50%; */
+  transform: rotate(45deg);
+  content: "";
+}
+
+.left {
+  left: 0;
+  margin-right: 50%; /*vw*/
+  /* padding-left: 10%; vw */
+  padding-right: 40px;
+}
+
+.left::before {
+  position: absolute;
+  z-index: 1;
+  top: 22px;
+  right: 30px;
+  width: 0;
+  height: 0;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+  content: "";
+}
+
+.right {
+  margin-left: 50%; /*vw*/
+  padding-left: 40px;
+  /* padding-right: 10%; vw */
+}
+
+.right::before {
+  position: absolute;
+  z-index: 1;
+  top: 22px;
+  left: 30px;
+  width: 0;
+  height: 0;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  content: "";
+}
+
+.right::after {
+  left: -14px;
+}
+
+.container-content {
+  position: relative;
+  padding: 20px 30px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.container-content h3 {
+  padding: 0 0 0.5rem 0;
+  font-family: "Source Code", monospace;
+  font-size: 1.5rem;
+}
+
+.container-content h4 {
+  padding: 0 0 1rem 0;
+  font-family: "Source Code", monospace;
+  font-size: 0.8rem;
+  color: rgb(120, 120, 120);
+}
+
+.container-content p {
+  font-size: 1rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.txt-divider {
+    color: rgb(40, 235, 215);
+}
+
+@media screen and (max-width: 600px) {
+    .timeline {
+        /* margin: 0 10%; */
+        margin-bottom: 3rem;
+    }
+
+  .timeline::after {
+    left: 31px;
+  }
+
+  .container {
+    /* width: 100%; */
+    padding-left: 70px;
+    /* padding-right: 25px; */
+  }
+
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  .left::after,
+  .right::after {
+    left: 17px;
+  }
+
+  .left {
+    left: 0;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .right {
+    left: 0%;
+    margin-left: 0;
+  }
+}

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Telegdi Ármin</title>
-    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,8 +24,9 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/terminal.css">
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/terminal.css" />
+    <link rel="stylesheet" href="./styles/timeline.css" />
+    <link rel="stylesheet" href="./styles/shared.css" />
     <script src="./scripts/typewriter.js" defer></script>
     <script src="./scripts/app.js" defer></script>
   </head>
@@ -46,16 +47,22 @@
                 </span>
                 <ul class="dropdown-content" id="app-dropdown-cont">
                   <li>
-                    <span class="material-icons-outlined tab-icon">terminal</span>
+                    <span class="material-icons-outlined tab-icon"
+                      >terminal</span
+                    >
                     <a href="">Terminal</a>
                   </li>
                   <div class="divider"></div>
                   <li>
-                    <span class="material-icons-outlined tab-icon">settings</span>
+                    <span class="material-icons-outlined tab-icon"
+                      >settings</span
+                    >
                     <a href="">Settings</a>
                   </li>
                   <li>
-                    <span class="material-icons-outlined tab-icon">question_mark</span>
+                    <span class="material-icons-outlined tab-icon"
+                      >question_mark</span
+                    >
                     <a href="">About</a>
                   </li>
                 </ul>
@@ -82,11 +89,115 @@
           <div id="workspace">
             <p>Terminal</p>
             <p>Copyright (C) Telegdi Ármin. All rights reserved.</p>
-            <p>C:\Users\armin><span id="typewriter" class="type-active"></span></p>
+            <p>
+              C:\Users\armin><span id="typewriter" class="type-active"></span>
+            </p>
           </div>
         </div>
       </section>
-      <!-- <section id="about"></section> -->
+      <section id="about">
+          <h1>&ltTelegdi Ármin&#47&gt</h1>
+            <img src="./img/Profile-picture.jpg" alt="Armin Telegdi's profile picture" id="avatar">
+          <h2>Profile</h2>
+          <p>
+            I'm a motivated and committed web developer. I love to learn, and I
+            constantly keep improving my skills to solve more and more complex
+            tasks with success. I pay attention to my tasks and do my duties
+            with responsibility and precision. I'm also broad minded and think
+            to love in systems. In my free time I read a lot or go out for a
+            hike.
+          </p>
+          <h2>Work experience & education</h2>
+        <div class="timeline">
+          <div class="container left">
+            <div class="container-content">
+              <h3>Mentored course <span class="txt-divider">@</span> personal sessions</h3>
+              <h4>NOVEMBER 2021 - PRESENT</h4>
+              <p>
+                Comprehensive course with the developer of Kinsta Inc. about
+                general web development practices and real-life frontend dev
+                techniques.
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="container-content">
+              <h3>
+                Full stack web development course <span class="txt-divider">@</span> Academind - Udemy, online
+              </h3>
+              <h4>OCTOBER 2021 - PRESENT</h4>
+              <p>
+                I dealt in dept with web development basics and modern frontend
+                tools, but learned about backend tools, version management, the
+                use of mod- ern build tools and package managers, design tools
+                and a lot of other things as well. I'm actively running multiple
+                own projects for fun and also to deepen my knowledge.
+              </p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="container-content">
+              <h3>Production engineer <span class="txt-divider">@</span> Orange Cube Kft, Budapest</h3>
+              <h4>JANUARY 2021 - DECEMBER 2021</h4>
+              <p>
+                I've designed domestic and business furniture or controlled
+                their installation. I've done every task from measurements to
+                design and production coordination. I've also controlled smaller
+                construction groups on site.
+              </p>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="container-content">
+              <h3>Production engineer <span class="txt-divider">@</span> Ligno Art Kft, Budapest</h3>
+              <h4>OCTOBER 2017 - NOVEMBER 2020</h4>
+              <p>
+                I've designed premium furniture for demanding clients. I've done
+                a comprehensive list of duties from measurements, client
+                contacting to controlling production and ordering required
+                materials.
+              </p>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="container-content">
+              <h3>
+                Timber Industry Engineer BSc <span class="txt-divider">@</span> University of West Hungary,
+                Sopron
+              </h3>
+              <h4>SEPTEMBER 2013 - JANUARY 2017</h4>
+              <p>
+                I've conducted studies in the field of timber industry,
+                accompanied with modern CAD/CAM technologies, CNC and PLC
+                programming as well.
+              </p>
+            </div>
+          </div>
+        </div>
+        <h2>Skills</h2>
+        <div id="tag-cloud">
+          <div class="item production-skill">HTML</div>
+          <div class="item production-skill">CSS</div>
+          <div class="item production-skill">JAVASCRIPT</div>
+          <div class="item production-skill">REACT</div>
+          <div class="item production-skill">NODE.JS</div>
+          <div class="item production-skill">EJS</div>
+          <div class="item production-skill">EXPRESS</div>
+          <div class="item production-skill">BOOTSTRAP</div>
+          <div class="item utility-skill">GIT</div>
+          <div class="item utility-skill">GITHUB</div>
+          <div class="item utility-skill">WEBPACK</div>
+          <div class="item utility-skill">FIGMA</div>
+          <div class="item utility-skill">NPM</div>
+          <div class="item utility-skill">COMMAND PROMPT</div>
+          <div class="item utility-skill">ILLUSTRATOR</div>
+          <div class="item utility-skill">PHOTOSHOP</div>
+          <div class="item language-skill">ENG</div>
+          <div class="item language-skill">GER</div>
+          <div class="item language-skill">JPN</div>
+        </div>
+        <a href="./files/Armin Telegdi - Resume.pdf" target="_blank" class="btn">Download curriculum</a>
+      </section>
     </main>
   </body>
 </html>
